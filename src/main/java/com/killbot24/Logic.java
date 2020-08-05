@@ -1,7 +1,6 @@
-package killbot24.com.chat;
+package com.killbot24;
 
 import org.apache.commons.lang3.StringUtils;
-import org.spongepowered.api.Sponge;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.text.Text;
 import org.spongepowered.api.text.TranslatableText;
@@ -9,7 +8,6 @@ import org.spongepowered.api.text.format.TextColors;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.function.Function;
 
 /**
  * Created by tjbur on 01/06/2020.
@@ -20,7 +18,6 @@ public class Logic extends Chat {
 
     datastorage store = new datastorage();
     private String[] blocked;
-    private String[] curse={"fuck","shit","cunt"};
     private String[] muted;
     public boolean Checkchat(Player player,String message,String type) {
 
@@ -102,13 +99,5 @@ public class Logic extends Chat {
     public void Serverstart(){
         store.Readmute();
     }
-    public String familymode(String message){
-        //for family screening
-        Boolean prevent=false;
-        for (int i = 0; i < curse.length; i++) {
-        if (message.contains(curse[i])) {
-            message.replace(curse[i],"");
-        }}
-        return message;
-    }
+
 }

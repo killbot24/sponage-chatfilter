@@ -1,4 +1,4 @@
-package killbot24.com.chat;
+package com.killbot24;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;

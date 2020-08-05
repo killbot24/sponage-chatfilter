@@ -1,16 +1,15 @@
-package killbot24.com.chat.Commands;
+package com.killbot24.Commands;
 
-import killbot24.com.chat.Chat;
-import killbot24.com.chat.Logic;
-import killbot24.com.chat.config;
-import killbot24.com.chat.data;
+import com.killbot24.Chat;
+import com.killbot24.Logic;
+import com.killbot24.config;
+import com.killbot24.data;
 import org.spongepowered.api.command.CommandException;
 import org.spongepowered.api.command.CommandResult;
 import org.spongepowered.api.command.CommandSource;
 import org.spongepowered.api.command.args.CommandContext;
 import org.spongepowered.api.command.spec.CommandExecutor;
 
-import java.util.List;
 import java.util.function.Function;
 
 /**

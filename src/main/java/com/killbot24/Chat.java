@@ -1,15 +1,12 @@
-package killbot24.com.chat;
+package com.killbot24;
 
-import com.google.common.reflect.TypeToken;
 import com.google.inject.Inject;
-import killbot24.com.chat.Commands.check;
-import killbot24.com.chat.Commands.list;
-import killbot24.com.chat.Commands.reload;
-import killbot24.com.chat.Commands.unmute;
-import killbot24.com.chat.listener.playerchatListener;
+import com.killbot24.Commands.check;
+import com.killbot24.Commands.list;
+import com.killbot24.Commands.unmute;
+import com.killbot24.Commands.reload;
+import com.killbot24.listener.playerchatListener;
 import ninja.leaping.configurate.ConfigurationNode;
-import ninja.leaping.configurate.commented.CommentedConfigurationNode;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.command.args.GenericArguments;
@@ -18,13 +15,9 @@ import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.game.state.GameInitializationEvent;
 import org.spongepowered.api.event.game.state.GameStartedServerEvent;
 import org.spongepowered.api.plugin.Plugin;
-import org.spongepowered.api.service.permission.PermissionDescription;
-import org.spongepowered.api.service.permission.PermissionDescription.Builder;
-import org.spongepowered.api.service.permission.PermissionService;
+
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Function;
 
 import org.spongepowered.api.config.ConfigDir;

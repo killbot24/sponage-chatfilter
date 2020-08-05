@@ -1,4 +1,4 @@
-package killbot24.com.chat;
+package com.killbot24;
 
 import org.slf4j.Logger;
 

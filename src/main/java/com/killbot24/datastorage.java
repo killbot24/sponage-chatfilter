@@ -1,7 +1,6 @@
-package killbot24.com.chat;
+package com.killbot24;
 
 import org.spongepowered.api.entity.living.player.Player;
-import org.spongepowered.api.network.PlayerConnection;
 import org.spongepowered.api.text.Text;
 import org.spongepowered.api.text.TranslatableText;
 import org.spongepowered.api.text.format.TextColors;
@@ -12,8 +11,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
-
-import static sun.audio.AudioPlayer.player;
 
 /**
  * Created by tjbur on 06/06/2020.
