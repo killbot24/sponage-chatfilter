@@ -1,0 +1,21 @@
+[
+    {
+        "modid": "chat-filter",
+        "name": "Chat-filter",
+        "description": "Chat filter",
+        "authorList": [
+            "killbot24"
+        ],
+        "dependencies": [
+            "spongeapi@7.2.0"
+        ],
+        "requiredMods": [
+            "spongeapi@7.2.0"
+        ]
+    },
+    {
+        "modid": "chat",
+        "name": "Sponage-Chat-filter",
+        "version": "1.0-SNAPSHOT"
+    }
+]

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: org.spongepowered:configurate-core:3.6.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/spongepowered/configurate-core/3.6.1/configurate-core-3.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
