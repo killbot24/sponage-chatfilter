@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sponage-chatfilter.iml" filepath="$PROJECT_DIR$/.idea/modules/sponage-chatfilter.iml" group="sponage-chatfilter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sponage-chatfilter.iml" filepath="$PROJECT_DIR$/.idea/modules/sponage-chatfilter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sponage-chatfilter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sponage-chatfilter_main.iml" group="sponage-chatfilter" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sponage-chatfilter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sponage-chatfilter_test.iml" group="sponage-chatfilter" />
     </modules>
