@@ -146,11 +146,11 @@ public class Chat {
                 .child(check,"check")
                 .build();
 
-        Sponge.getCommandManager().register(plugin, myCommandSpec, "ctreload");
-        Sponge.getCommandManager().register(plugin, unmute, "ctunmute");
-        Sponge.getCommandManager().register(plugin, Main, "ct");
-        Sponge.getCommandManager().register(plugin, list, "ctlist");
-        Sponge.getCommandManager().register(plugin, check, "ctcheck");
+        Sponge.getCommandManager().register(plugin, myCommandSpec, "filterreload");
+        Sponge.getCommandManager().register(plugin, unmute, "filterunmute");
+        Sponge.getCommandManager().register(plugin, Main, "filter");
+        Sponge.getCommandManager().register(plugin, list, "filterlist");
+        Sponge.getCommandManager().register(plugin, check, "filtercheck");
 
     }
 

@@ -53,6 +53,7 @@ public class Logic extends Chat {
                         lan.staff(player, message, blocked[i],type);      // sends warning to staff
                         store.addmute(player); //mutes player
                         store.report(player.getName(),blocked[i],message,type);
+                        dat.getLogger().info("[Chat Filter] "+player.getName()+" Has been muted for attempting to say : "+message);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

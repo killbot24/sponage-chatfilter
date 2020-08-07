@@ -31,6 +31,7 @@ public class unmute implements CommandExecutor {
         if (commandSource instanceof ConsoleSource) {
             try {
                 store.unmutec(player);
+                store.logunmute("console",player);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -39,6 +40,7 @@ public class unmute implements CommandExecutor {
             try {
 
                 store.unmute(player, players);
+                store.logunmute(players.getName(),player);
 
             } catch (IOException e) {
                 e.printStackTrace();

@@ -102,7 +102,7 @@ public class datastorage extends Chat{
 
     public void addmute(final Player player) throws IOException {
         final File file = new File(getfile().getAbsoluteFile(), "Active-mutes.yml");
-        final PrintWriter out = new PrintWriter(new FileWriter(file, false));
+        final PrintWriter out = new PrintWriter(new FileWriter(file, true));
         try {
             out.write("\n" + player.getName() + "\n");
             out.close();
@@ -189,6 +189,27 @@ public class datastorage extends Chat{
         final File warningfolder = new File(getfile().getAbsoluteFile(), "Warnings");
         if (!warningfolder.exists()) {
             warningfolder.mkdir();
+        }
+    }
+    public void logunmute(String player, String mute) throws IOException {
+        final File file = new File(getfile().getAbsoluteFile(), "log.yml");
+        final PrintWriter out = new PrintWriter(new FileWriter(file, true));
+        final String timeStamp = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            }
+            catch (IOException e1) {
+                getLogger().info("[Chat filter]: log file error");
+                e1.printStackTrace();
+            }}
+        try {
+            out.write("\n"+timeStamp+" "+ player +" unmuted "+mute+ "\n");
+            out.close();
+
+        }
+        catch (Exception e) {
+            this.getLogger().info("[Warning] Issue writeing file");
         }
     }
 }
